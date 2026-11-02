@@ -12,6 +12,18 @@
 
 `yarn add @remix-project/remix-simulator`
 
+### Vercel Speed Insights
+
+This package includes `@vercel/speed-insights` as a dependency. **Important Note:** Vercel Speed Insights is a client-side performance monitoring tool designed for frontend web applications. Since `remix-simulator` is a backend Express server with no frontend components, Speed Insights cannot be directly utilized in this context.
+
+If you have a frontend application that consumes the remix-simulator API, you should integrate Speed Insights there by following the framework-specific instructions at [Vercel Speed Insights Quickstart](https://vercel.com/docs/speed-insights/quickstart).
+
+For frontend integration examples:
+- **React**: Import from `@vercel/speed-insights/react`
+- **Next.js**: Import from `@vercel/speed-insights/next`
+- **Remix**: Import from `@vercel/speed-insights/remix`
+- **Other frameworks**: See the official documentation
+
 ### How to use
 
 `@remix-project/remix-simulator` implements:
